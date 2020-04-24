@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs/NaiveBayes/v16/ipch/AutoPCH/31ca6f2d0f60e5bc
+/.vs/NaiveBayes/v16/ipch/AutoPCH
+/.vs/NaiveBayes/v16
+/data/amazon_reviews
+/data/comedians
+/data/songs
+/data/Movies_and_TV_5.json
+/debug
+/release
+/NaiveBayes.vcxproj.filters
+/NaiveBayes.vcxproj.user
