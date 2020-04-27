@@ -23,6 +23,9 @@ MainWindow::MainWindow
     connect(_actionOpenFile, &QAction::triggered, this, &MainWindow::browseForClassifierOpenFile);
     connect(_actionSave, &QAction::triggered, this, &MainWindow::browseForClassifierSaveFile);
     connect(_computeButton, &QPushButton::pressed, this, &MainWindow::runClassifier);
+
+	_classifier.readFromFile(":/data/sentiment.mat");
+	generateTableModel();
 }
 
 MainWindow::~MainWindow()
@@ -80,6 +83,7 @@ void MainWindow::runClassifier()
     
     auto mostProbable = probabilities.mostProbable();
     _classificationLabel->setText(probabilities.getLabel(mostProbable.first));
+	_classificationLabel->update();
 }
 
 void MainWindow::generateTableModel()

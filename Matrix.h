@@ -1,7 +1,6 @@
 #pragma once
 
 #include <QObject>
-#include <QSharedPointer>
 #include <QSharedDataPointer>
 
 #include <math.h>
@@ -192,7 +191,7 @@ private:
 	QSharedDataPointer<MatrixData> _matrixData;
 };
 
-inline MatrixData* QSharedDataPointer<MatrixData>::clone()
+template<> inline MatrixData* QSharedDataPointer<MatrixData>::clone()
 {
 	return d->clone();
 }

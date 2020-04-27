@@ -73,7 +73,15 @@ QVariant NaiveBayesClassifierTableModel::headerData
 
 	if (orientation == Qt::Vertical)
 	{
-		return _words[section];
+		const QString& word = _words[section];
+		if (word.length() < 25)
+		{
+			return word;
+		}
+		else
+		{
+			return word.mid(0, 25) + "...";
+		}
 	}
 	else
 	{

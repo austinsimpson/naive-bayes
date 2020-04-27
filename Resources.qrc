@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/sentiment.mat</file>
+        <file>data/sentiment.mat.words</file>
+        <file>data/stop_words.txt</file>
+        <file>data/suffixes.txt</file>
+    </qresource>
+</RCC>
