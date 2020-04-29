@@ -39,7 +39,7 @@
     <item>
      <widget class="QLabel" name="_classificationLabel">
       <property name="text">
-       <string>TextLabel</string>
+       <string>Results will show up here.</string>
       </property>
      </widget>
     </item>
